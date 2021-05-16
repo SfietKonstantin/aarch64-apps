@@ -1,0 +1,3 @@
+[submodule "apps/harbour-gpsinfo"]
+	path = apps/harbour-gpsinfo
+	url = https://github.com/direc85/harbour-gpsinfo.git

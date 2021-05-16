@@ -1,0 +1,12 @@
+diff --git a/src/gpsdatasource.h b/src/gpsdatasource.h
+index 588d036..995053d 100644
+--- a/apps/harbour-gpsinfo/src/gpsdatasource.h
++++ b/apps/harbour-gpsinfo/src/gpsdatasource.h
+@@ -8,6 +8,7 @@
+ #include <QGeoSatelliteInfoSource>
+ #include <QGeoPositionInfoSource>
+ #include "gpsinfosettings.h"
++#include <cmath>
+ 
+ class GPSSatellite : public QObject {
+     Q_OBJECT
