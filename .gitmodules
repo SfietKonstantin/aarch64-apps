@@ -1,3 +1,6 @@
 [submodule "apps/harbour-gpsinfo"]
 	path = apps/harbour-gpsinfo
 	url = https://github.com/direc85/harbour-gpsinfo.git
+[submodule "apps/harbour-systemmonitor"]
+	path = apps/harbour-systemmonitor
+	url = https://github.com/custodian/harbour-systemmonitor.git

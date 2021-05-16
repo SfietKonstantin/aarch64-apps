@@ -4,12 +4,6 @@ set -euxo pipefail
 
 RELEASE="4.0.1.45"
 
-# Apply patches
-for f in patches/*.patch
-do
-patch -p1 < "$f"
-done
-
 mkdir -p RPMS
 
 # Build package in docker

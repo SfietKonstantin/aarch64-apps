@@ -1,0 +1,25 @@
+diff --git a/rpm/harbour-systemmonitor.spec b/rpm/harbour-systemmonitor.spec
+index 4a48c50..d0e7cef 100644
+--- a/apps/harbour-systemmonitor/rpm/harbour-systemmonitor.spec
++++ b/apps/harbour-systemmonitor/rpm/harbour-systemmonitor.spec
+@@ -94,6 +94,6 @@ su nemo -c "systemctl --user daemon-reload"
+ %{_datadir}/%{name}
+ %{_datadir}/applications/%{name}.desktop
+ %{_datadir}/icons/hicolor/86x86/apps/%{name}.png
+-%{_libdir}/systemd/user/%{name}d.service
++%{_prefix}/lib/systemd/user/%{name}d.service
+ # >> files
+ # << files
+diff --git a/rpm/harbour-systemmonitor.yaml b/rpm/harbour-systemmonitor.yaml
+index 9730cf9..79b28ef 100644
+--- a/apps/harbour-systemmonitor/rpm/harbour-systemmonitor.yaml
++++ b/apps/harbour-systemmonitor/rpm/harbour-systemmonitor.yaml
+@@ -42,7 +42,7 @@ Files:
+   - '%{_datadir}/%{name}'
+   - '%{_datadir}/applications/%{name}.desktop'
+   - '%{_datadir}/icons/hicolor/86x86/apps/%{name}.png'
+-  - '%{_libdir}/systemd/user/%{name}d.service'
++  - '%{_prefix}/lib/systemd/user/%{name}d.service'
+ 
+ # For more information about yaml and what's supported in Sailfish OS
+ # build system, please see https://wiki.merproject.org/wiki/Spectacle
